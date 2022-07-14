@@ -16,6 +16,7 @@ class VisitController extends Controller
 
     public function getPhone($phone) {
         $Articles = Article::where('phone', $phone)->get();
+        if ($Articles->count() == 0 ) return View('nophone');
         if ($Articles->count() == 1) {
             $id = $Articles[0]->id;
             return redirect("/articles/$id");

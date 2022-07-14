@@ -10,7 +10,7 @@
                     <p class="h4">Укажите телефон, чтобы увидеть объявление полностью</p>
                     <div class="row">
                         <div class="col">
-                            <input class="form-control form-control-lg" name="phone" id="phone" value="89588087121">
+                            <input class="form-control form-control-lg" name="phone" id="phone" placeholder="Номер телефона">
                         </div>
                         <div class="col-auto">
                             <input  class="form-control btn-primary btn-lg" type="submit" value="Найти объявление">

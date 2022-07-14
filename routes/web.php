@@ -18,7 +18,9 @@ Route::get('/', function () {
 });
 
 Route::post('/', function () {
-    if ($phone = request('phone')) {
+    $phone = request('phone');
+    $phone = preg_replace('~\D+~','', $phone);
+    if ($phone) {
         return redirect("/phones/$phone");
     } else return redirect('/');
 });
