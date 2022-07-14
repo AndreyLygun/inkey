@@ -19,6 +19,9 @@ class CreateArticlesTable extends Migration
             $table->string('phone');
             $table->integer('category_id')->default(1);
             $table->string('title');
+            $table->string('city')->default('');
+            $table->string('address')->default('');
+            $table->string('photo')->default('');
             $table->text('description');
         });
     }

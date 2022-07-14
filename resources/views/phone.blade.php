@@ -2,13 +2,16 @@
 
 @section('content')
     <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-8">
-                @foreach($Articles as $Article)
-                    <h1>{{$Article->title}}</h1>
+        <div class="row">
+            @foreach($Articles as $Article)
+                <div class="col-8 col-md-10">
+                    <p class="h3">{{$Article->title}}</p>
                     <p><a href="/articles/{{$Article->id}}">Подробней</a></p>
-                @endforeach
-            </div>
+                </div>
+                <div class="col-4 col-md-2">
+                    <img src="/photos/{{$Article->photo}}" class="img-fluid"/>
+                </div>
+            @endforeach
         </div>
     </div>
 @endsection

@@ -12,6 +12,7 @@
     <!-- Scripts -->
     <script src="/lib/bootstrap/js/bootstrap.bundle.js"></script>
     <link href="/lib/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="/style.css" rel="stylesheet">
     @yield('scripts')
 
 </head>

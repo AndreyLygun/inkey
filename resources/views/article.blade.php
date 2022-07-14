@@ -20,21 +20,21 @@
 @section('content')
     <div class="container">
         <div class="row">
-            <div class="col-12 colm-md-8 col-lg-6">
+            <div class="col-12">
                 <h1>{{$Article->title}}</h1>
                 <p>{{$Article->description}}</p>
             </div>
         </div>
         <div class="row">
             @foreach($Article->photos as $Photo)
-                <a href="/photos/{{$Photo->file}}" class="col-3 col-md-1 my-2" data-lightbox="images" >
-                    <img src="/photos/{{$Photo->file}}" class="img-fluid" >
+                <a href="/photos/{{$Photo->file}}" class="col-3 col-md-2 my-2" data-lightbox="images" >
+                    <img src="/photos/{{$Photo->file}}" class="img-fluid img-thumbnail"  >
                 </a>
             @endforeach
         </div>
-        <div class="row">
-            <div class="col-12 col-md-8 col-lg-6">
-                <div id="map" style="height: 500px"></div>
+        <div class="row mt-3">
+            <div class="col-12">
+                <div id="map" style="height: 300px"></div>
             </div>
         </div>
     </div>

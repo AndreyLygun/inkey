@@ -23,6 +23,7 @@ Route::post('/', function () {
     } else return redirect('/');
 });
 
+Route::view('/promo/', 'promo');
 Route::get('/phones/{phone}', [Controllers\VisitController::class, 'getPhone']);
 Route::get('/articles/{id}', [Controllers\VisitController::class, 'getArticle']);
 
