@@ -29,6 +29,8 @@ Route::view('/promo/', 'promo');
 Route::get('/phones/{phone}', [Controllers\VisitController::class, 'getPhone']);
 Route::get('/articles/{id}', [Controllers\VisitController::class, 'getArticle']);
 
+Route::get('/edit/{id}', [Controllers\CabinetController::class, 'editArticle']);
+Route::post('/edit/{id}', [Controllers\CabinetController::class, 'storeArticle']);
 
 Auth::routes();
 

@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Article extends Model
 {
+    public $guarded = [];
     use HasFactory;
     public function photos() {
         return $this->hasMany(Photo::class);
