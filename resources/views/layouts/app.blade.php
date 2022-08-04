@@ -13,6 +13,12 @@
     <script src="/lib/bootstrap/js/bootstrap.bundle.js"></script>
     <link href="/lib/bootstrap/css/bootstrap.css" rel="stylesheet">
     <link href="/style.css" rel="stylesheet">
+
+    <link rel="icon" href="/favicon.ico" sizes="any"><!-- 32×32 -->
+    <link rel="icon" href="/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png"><!-- 180×180 -->
+
+
     @yield('scripts')
 
 </head>
