@@ -4,9 +4,10 @@
     <div class="container">
         <div class="row">
             <div class="col">
-                <p>По номеру {{$Articles[0]->phone}} мы нашли {{$Articles->count()}} объявления</p>
+                <p class="h5">По номеру {{$Articles[0]->phone}} мы нашли {{$Articles->count()}} объявления:</p>
             </div>
         </div>
+        <hr>
         @foreach($Articles as $Article)
             <div class="row">
                 <div class="col-8 col-md-10">
